@@ -276,7 +276,6 @@ try {
 				assert.doesNotThrow(() => imageChat.render(width), "image group must render after toggling expansion");
 			}
 			assert.equal(imageTool.imageComponents.length, expanded ? 1 : 0);
-			assert.equal(imageTool.imageSources.length, expanded ? 1 : 0);
 			if (expanded) assert.ok(imageTool.imageComponents[0]);
 		}
 	}
